@@ -40,7 +40,7 @@ def net_1():
     history = cnn.fit(X_train, y_train, batch_size=32, epochs=5, validation_data=(X_validation, y_validation))
     
     print("training accuracy: ", history.history["accuracy"][-1])
-    print("training accuracy: ", history.history["val_accuracy"][-1])
+    print("validation accuracy: ", history.history["val_accuracy"][-1])
     plt.plot(history.history['loss'], "r-")
     plt.plot(history.history['val_loss'], "b-")
     plt.show()
@@ -59,7 +59,7 @@ def net_2():
     history = cnn.fit(X_train, y_train, batch_size=32, epochs=5, validation_data=(X_validation, y_validation))
 
     print("training accuracy: ", history.history["accuracy"][-1])
-    print("training accuracy: ", history.history["val_accuracy"][-1])
+    print("validation accuracy: ", history.history["val_accuracy"][-1])
     plt.plot(history.history['loss'], "r-")
     plt.plot(history.history['val_loss'], "b-")
     plt.show()
@@ -82,7 +82,7 @@ def net_3():
     history = cnn.fit(X_train, y_train, batch_size=32, epochs=5, validation_data=(X_validation, y_validation))
 
     print("training accuracy: ", history.history["accuracy"][-1])
-    print("training accuracy: ", history.history["val_accuracy"][-1])
+    print("validation accuracy: ", history.history["val_accuracy"][-1])
     plt.plot(history.history['loss'], "r-")
     plt.plot(history.history['val_loss'], "b-")
     plt.show()
