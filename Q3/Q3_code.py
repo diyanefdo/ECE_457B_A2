@@ -87,4 +87,6 @@ def net_3():
     plt.plot(history.history['val_loss'], "b-")
     plt.show()
 
+net_1()
+net_2()
 net_3()
